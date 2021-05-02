@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiceChallenge.Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiceChallenge.Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WeekForecastContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WeatherDaySimpleContracts" nillable="true" type="tns:ArrayOfDayForecastSimpleContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeekForecastContract" nillable="true" type="tns:WeekForecastContract" />
+  <xs:complexType name="ArrayOfDayForecastSimpleContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DayForecastSimpleContract" nillable="true" type="tns:DayForecastSimpleContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDayForecastSimpleContract" nillable="true" type="tns:ArrayOfDayForecastSimpleContract" />
+  <xs:complexType name="DayForecastSimpleContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Day" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Icon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemperatureInCelcius" type="xs:double" />
+      <xs:element minOccurs="0" name="TemperatureInFarenheit" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DayForecastSimpleContract" nillable="true" type="tns:DayForecastSimpleContract" />
+  <xs:complexType name="DayForecastCompleteContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DayForecastSimpleContract">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DescriptionWeather" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Humidity" type="xs:double" />
+          <xs:element minOccurs="0" name="ProbabilityOfPrecipitation" type="xs:double" />
+          <xs:element minOccurs="0" name="WindSpeed" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DayForecastCompleteContract" nillable="true" type="tns:DayForecastCompleteContract" />
+</xs:schema>

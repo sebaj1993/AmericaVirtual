@@ -1,0 +1,142 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*custom*/
+.navbar-top {
+    background-color: salmon;
+    border-color: salmon;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > button > a {
+    color: white;
+    text-decoration:none
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    text-decoration:none
+}
+
+.navbar-inverse .navbar-nav > li > button:hover {
+    background-color: salmon;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.welcome-title{
+    margin-top: 134px;
+    font-size: 64px;
+}
+
+.button-login{
+    background-color: salmon;
+    margin-top: 10px;
+    color: white;
+    height: 31px;
+}
+
+.panel-title-forecast{
+    color: blue;
+}
+
+.hr-panel-forecast{
+    background-color: blue; 
+    height: 2px;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+
+.equal {  
+    display: -webkit-flex;
+    display: flex;
+}
+
+.panel-up{
+    min-height: 400px;
+}
+
+.extra-information{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.img-forecast{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title-week-forecast{
+    text-align: center;
+    color: blue;
+    letter-spacing:7px;
+    margin-bottom:30px;
+}
+
+.img-forecast-week{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom:40px;
+}
+
+.extra-information-week{
+    text-align: center;
+}
+
+.spacing-text{
+    letter-spacing:5px;
+}
+
+.box-day-week{
+    border-right: 1px solid grey;
+}
+
+.box-day-week:last-child{
+    border-right: 0px;
+}
+
+.row-week-information{
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
