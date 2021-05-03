@@ -63,6 +63,17 @@ textarea {
     margin-top: 10px;
     color: white;
     height: 31px;
+    line-height: 0px!important;
+    border-color: white;
+}
+
+.button-login:hover{
+    border-color: white;
+    color: white;
+}
+
+.button-login:last-child {
+    margin-left: 25px;
 }
 
 .panel-title-forecast{

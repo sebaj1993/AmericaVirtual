@@ -19,10 +19,10 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li>
-            <button type="button" class="btn btn-default button-login" style="margin-right: 25px;">@Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</button>
+            @Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn btn-primary btn-large button-login" })
         </li>
         <li>
-            <button type="button" class="btn btn-default button-login">@Html.ActionLink("Iniciar Sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</button>
+            @Html.ActionLink("Iniciar Sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary btn-large button-login" })
         </li>
     </ul>
 }
